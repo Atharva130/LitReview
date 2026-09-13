@@ -1,0 +1,6 @@
+litenv/
+__pycache__/
+*.pyc
+.env
+.git/
+data/claims_cache.json

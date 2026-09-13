@@ -1,6 +1,7 @@
 import sys
 import os
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+DATA_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+FALLBACK_PATH = os.path.join(DATA_DIR, "data", "sample_papers.json")
 
 import json
 from mcp_client import call_mcp_tool
@@ -24,6 +25,9 @@ async def find_papers(topic: str, max_results: int = 5) -> dict:
         return {"papers": papers, "used_fallback": False}
     except Exception as e:
         print(f"[finder_agent] Live search failed ({e}), using cached fixture.")
-        with open("data/sample_papers.json") as f:
+        with open(FALLBACK_PATH) as f:
             papers = json.load(f)
         return {"papers": papers, "used_fallback": True}
+
+
+    
