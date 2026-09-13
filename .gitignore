@@ -11,7 +11,9 @@ __pycache__/
 # Data cache (papers/extractions, keep folder but ignore contents)
 data/*.json
 data/*.pdf
+data/claims_cache.json
 
 # OS junk
 .DS_Store
 Thumbs.db
+

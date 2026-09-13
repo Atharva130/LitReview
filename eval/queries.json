@@ -1,0 +1,17 @@
+[
+  {
+    "topic": "lunar terrain segmentation deep learning",
+    "expected_relationship": "consensus",
+    "note": "Most papers should agree that CNN/U-Net based methods outperform classical thresholding for terrain classification."
+  },
+  {
+    "topic": "lunar crater detection CNN",
+    "expected_relationship": "consensus",
+    "note": "Papers should broadly agree CNNs improve crater detection accuracy over handcrafted features."
+  },
+  {
+    "topic": "lunar landing hazard detection semantic segmentation",
+    "expected_relationship": "consensus",
+    "note": "Papers should agree segmentation-based hazard maps outperform simple slope/roughness thresholds."
+  }
+]
