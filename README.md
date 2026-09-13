@@ -1,7 +1,6 @@
 # LitReview — Multi-Agent Literature Review Assistant
 
-**Live demo:** https://litreview-rskm.onrender.com/
-*(Free-tier hosting — the app may take 30–60s to wake up if it's been idle.)*
+**Live demo:** https://litreview-rskm.onrender.com
 
 LitReview takes a research topic, finds relevant papers, extracts each paper's
 claims into a structured schema, and synthesizes those claims into a literature
