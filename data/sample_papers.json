@@ -1,0 +1,23 @@
+[
+  {
+    "id": "2509.14559",
+    "title": "Radiolunadiff: Estimation of wireless network signal strength in lunar terrain",
+    "abstract": "In this paper, we propose a novel physics-informed deep learning architecture for predicting radio maps over lunar terrain. Our approach integrates a physics-based lunar terrain generator, which produces realistic topography informed by publicly available NASA data, with a ray-tracing engine to create a high-fidelity dataset of radio propagation scenarios. Building on this dataset, we introduce a triplet-UNet architecture, consisting of two standard UNets and a diffusion network, to model complex propagation effects. Experimental results demonstrate that our method outperforms existing deep learning approaches on our terrain dataset across various metrics.",
+    "year": 2025,
+    "authors": ["Paolo Torrado", "Anders Pearson", "Jason Klein", "Alexander Moscibroda", "Joshua Smith"]
+  },
+  {
+    "id": "1803.02192",
+    "title": "Lunar Crater Identification via Deep Learning",
+    "abstract": "Crater counting on the Moon and other bodies is crucial to constrain the dynamical history of the Solar System. This has traditionally been done by visual inspection of images, thus limiting the scope, efficiency, and/or accuracy of retrieval. In this paper we demonstrate the viability of using convolutional neural networks (CNNs) to determine the positions and sizes of craters from Lunar digital elevation maps (DEMs). We recover 92% of craters from the human-generated test set and almost double the total number of crater detections. Our median fractional longitude, latitude and radius errors are 11% or less, representing good agreement with the human-generated datasets.",
+    "year": 2018,
+    "authors": ["Ari Silburt", "Mohamad Ali-Dib", "Chenchong Zhu", "Alan Jackson", "Diana Valencia", "Yevgeni Kissin", "Daniel Tamayo", "Kristen Menou"]
+  },
+  {
+    "id": "2508.03920",
+    "title": "Deep learning framework for crater detection and identification on the Moon and Mars",
+    "abstract": "Impact craters are among the most prominent geomorphological features on planetary surfaces and are of substantial significance in planetary science research. In this paper, we apply advancements in deep learning models for impact crater detection and identification, using novel models including Convolutional Neural Networks (CNNs) and variants such as YOLO and ResNet. We present a two-stage approach where the first stage features crater identification using classic CNN, ResNet-50 and YOLO. Our results indicate that YOLO demonstrates the most balanced crater detection performance, while ResNet-50 excels in identifying large craters with high precision.",
+    "year": 2025,
+    "authors": ["Yihan Ma", "Zeyang Yu", "Rohitash Chandra"]
+  }
+]

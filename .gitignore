@@ -9,7 +9,6 @@ __pycache__/
 *.pyc
 
 # Data cache (papers/extractions, keep folder but ignore contents)
-data/*.json
 data/*.pdf
 data/claims_cache.json
 
