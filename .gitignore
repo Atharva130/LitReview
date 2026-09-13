@@ -1,0 +1,17 @@
+# Virtual env
+litenv/
+
+# Env secrets
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Data cache (papers/extractions, keep folder but ignore contents)
+data/*.json
+data/*.pdf
+
+# OS junk
+.DS_Store
+Thumbs.db
