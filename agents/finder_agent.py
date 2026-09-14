@@ -20,7 +20,7 @@ async def find_papers(topic: str, max_results: int = 5) -> dict:
             {"topic": topic, "max_results": max_results},
         )
         if result.isError:
-            raise RuntimeError(result.content[0].text)
+            raise RuntimeError(result.content[0].text) #type:ignore
         papers = result.structuredContent["result"] if result.structuredContent else []
         return {"papers": papers, "used_fallback": False}
     except Exception as e:
