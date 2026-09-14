@@ -1,15 +1,13 @@
 import asyncio
+import os
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
 
 async def call_mcp_tool(server_script: str, tool_name: str, arguments: dict):
-    """
-    Launch an MCP server (given its script path) as a subprocess,
-    call one of its tools, and return the result.
-    """
     server_params = StdioServerParameters(
         command="python",
         args=[server_script],
+        env=os.environ.copy(),
     )
 
     async with stdio_client(server_params) as (read, write):
