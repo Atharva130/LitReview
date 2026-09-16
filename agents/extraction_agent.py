@@ -55,7 +55,7 @@ def extract_claims(paper_id: str, text: str, max_attempts: int = 3) -> dict:
             response = client.chat.completions.create(
                 model="openai/gpt-oss-20b",
                 messages=[{"role": "user", "content": prompt}],
-                max_tokens=1000,
+                max_tokens=1500,
                 temperature=0,
                 response_format={"type": "json_object"},
             )

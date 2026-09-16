@@ -54,8 +54,11 @@ async def extraction_node(state: LitReviewState) -> dict:
     claims = []
     for paper in state["papers"]:
         text = await get_paper_text(paper)
-        claim = extract_claims(paper["id"], text)
-        claims.append(claim)
+        try:
+            claim = extract_claims(paper["id"], text)
+            claims.append(claim)
+        except Exception as e:
+            print(f"[orchestrator] extraction failed for {paper['id']} ({e}), skipping this paper.")
     return {"extracted_claims": claims}
 
 
